@@ -1,8 +1,6 @@
 # Library-node
 
-Este es un proyecto creado con fines demostrativos. 
-+Node 16
-+Sequelize (postgres)
+Este es un proyecto creado con fines demostrativos. Se utiliza Node 16 + Sequelize (postgres).
 
 ## Installation
 
@@ -12,10 +10,15 @@ npm install
 Crear archivo .env con las siguientes variables:
 
 ENVIRONMENT
+
 PORT
+
 DB_HOST
+
 DB_USER
+
 DB_PASSWORD
+
 DB_NAME
 
 <!--> Opcional: insertar data de prueba <!-->
@@ -39,9 +42,13 @@ Usar Postman. Importar archivo postman.json. Crear variable de entorno 'url' en 
 
 <!--> Uso de operaciones CRUD. reader, item, copy, loan <!-->
 GET {{url}}/reader/all
+
 GET {{url}}/reader/one/<id>
+
 POST {{url}}/reader/
+
 PATCH {{url}}/reader/<id>
+
 DELETE {{url}}/reader/<id>
 
 
