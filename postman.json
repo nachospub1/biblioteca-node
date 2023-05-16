@@ -1,0 +1,574 @@
+{
+	"info": {
+		"_postman_id": "29d7e3ae-97df-43eb-91ad-93993f410b7a",
+		"name": "biblioteca-node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16330945"
+	},
+	"item": [
+		{
+			"name": "reader",
+			"item": [
+				{
+					"name": "findOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/reader/one/25",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reader",
+								"one",
+								"25"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByField",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/reader/field/amon",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reader",
+								"field",
+								"amon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findReaderHistory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/reader/history/45",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reader",
+								"history",
+								"45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/reader/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reader",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"\",\n    \"fatherLastName\": \"\",\n    \"motherLastName\": \"\",\n    \"email\": \"\",\n    \"phone\": \"\",\n    \"birthDate\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/reader/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reader",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"\",\n    \"fatherLastName\": \"\",\n    \"motherLastName\": \"\",\n    \"email\": \"\",\n    \"phone\": \"\",\n    \"birthDate\": \"\",\n    \"available\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/reader/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reader",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/reader/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reader",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "item",
+			"item": [
+				{
+					"name": "findOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/item/one/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"item",
+								"one",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByField",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/item/field/3427",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"item",
+								"field",
+								"3427"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getInventory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/item/inventory",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"item",
+								"inventory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/item/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"item",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"isbn\": \"\",\n    \"title\": \"\",\n    \"author\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/item/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"item",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"\",\n    \"author\": \"\",\n    \"status\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/item/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"item",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/item/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"item",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "copy",
+			"item": [
+				{
+					"name": "findOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/copy/one/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"copy",
+								"one",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/copy/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"copy",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"editorial_name\": \"\",\n    \"editorial_year\": 0,\n    \"itemId\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/copy/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"copy",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"editorial_name\": \"\",\n    \"editorial_year\": 0,\n    \"status\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/copy/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"copy",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/copy/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"copy",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "loan",
+			"item": [
+				{
+					"name": "findOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/loan/one/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"loan",
+								"one",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/loan/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"loan",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByCriteria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/loan/criteria?status=on loan",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"loan",
+								"criteria"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "on loan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"readerId\": 0,\n    \"copyId\": 0,\n    \"startDate\": \"2023-05-15T00:00:00.000Z\",\n    \"endDate\": \"2023-05-22T00:00:00.000Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/loan/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"loan",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"startDate\": \"2023-05-15T00:00:00.000Z\",\n    \"endDate\": \"2023-05-22T00:00:00.000Z\",\n    \"loanDays\": \"\",\n    \"status\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/loan/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"loan",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/loan/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"loan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
