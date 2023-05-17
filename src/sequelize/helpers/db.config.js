@@ -1,10 +1,10 @@
-const env = require('./env');
+const env = require('../../common/env');
 module.exports = {
   development: {
     HOST: env.DB_HOST,
     USER: env.DB_USER,
     PASSWORD: env.DB_PASSWORD,
-    host: env.DB_HOST,
+    host: env.DB_SEEDERS_HOST,
     username: env.DB_USER,
     password: env.DB_PASSWORD,
     database: env.DB_NAME,

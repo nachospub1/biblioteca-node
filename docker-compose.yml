@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  biblio-postgres:
+    image: postgres
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    ports:
+      - 5432:5432
+    volumes:
+      - /home/nacho/postgres-volume:/var/lib/postgresql
+  biblio-node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    # depends_on:
+    #   - db
+    # volumes:
+    #   - ./data:/usr/src/app/data
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=${ENVIRONMENT}
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+
