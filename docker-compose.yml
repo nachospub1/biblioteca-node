@@ -19,10 +19,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - 3000:3000
-    # depends_on:
-    #   - db
-    # volumes:
-    #   - ./data:/usr/src/app/data
     env_file:
       - .env
     environment:

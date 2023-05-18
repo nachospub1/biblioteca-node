@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const dbConfig = require('../common/db.config');
+const dbConfig = require('../sequelize/helpers/db.config');
 const env = require('../common/env');
 const setRelations = require('./helpers/setRelations');
 

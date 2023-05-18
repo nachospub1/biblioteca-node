@@ -2,9 +2,9 @@
 const copyRepository = require('../domain/repository');
 const { logger } = require('../../common/logger');
 
-const findAll = async () => {
+const destroy = async () => {
   try {
-    const copies = await copyRepository.findAll();
+    const copies = await copyRepository.destroy();
     if (!copies || copies.length == 0) return { success: false, code: 404, result: 'not found' };
     return { success: true, code: 200, result: copies };
   } catch (error) {
@@ -15,4 +15,4 @@ const findAll = async () => {
   }
 };
 
-module.exports = findAll;
+module.exports = destroy;
